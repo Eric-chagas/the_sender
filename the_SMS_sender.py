@@ -13,7 +13,7 @@ client = Client(account_sid, auth_token)
 
 message = client.messages.create(
     body="Hi! My name is Eric, i'm a CNU nerd! Come join my nerdy bullshit at CNU, virginia!",
-    from=os.environ['SENDER_PHONE_NUMBER'],
+    from_=os.environ['SENDER_PHONE_NUMBER'],
     to=os.environ['RECEIVER_PHONE_NUMBER_BR']
 )
 
